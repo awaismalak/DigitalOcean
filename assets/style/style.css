@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: red;
+}
+
+.main_container {
+  border: 1px solid;
+}
+
+.main_container header {
+  border: 1px solid;
+  height: 105px;
+}
+
+.main_container header .row_one {
+  border: 1px solid;
+  height: 40px;
+}
+/*# sourceMappingURL=style.css.map */
