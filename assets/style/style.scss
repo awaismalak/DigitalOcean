@@ -2,23 +2,574 @@ body
 {
     margin: 0px;
     padding: 0px;
-    background-color: red;
 }
-.main_container
+.section_heading
 {
-    border:1px solid;
+    font-size: 35px;
+    color: #031c4e;
+    font-weight: 800;
+    padding-bottom: 20px;
+    text-align:center;
+}
+.paddingTB
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.tbFifty
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.section_text
+
+    
+    {
+        font-size: 20px;
+        color: rgba(3,27,78,.7);
+        padding-bottom: 40px;
+        text-align:center;
+        
+
+    }
+    .workFlow_tems
+    {
+        .workFlow_contant
+        {
+            padding: 10px;
+            .image
+            {
+                img
+                {
+
+                width: 40px;
+                height: 40px;
+                }
+            }
+            .workFlow_title
+            {
+                height: 50px;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                color: rgb(3, 27, 78);
+
+            }
+            .workFlow_discription
+            {
+               
+                font-size: 16px;
+                color: rgba(3, 27, 78, 0.7);
+
+               
+            }
+        }
+    }
+    // modifie slider code reuseable 
+    #carouselExampleIndicators, #carouselExampleIndicators1
+    {
+        position: relative;
+        .carousel-indicators li
+        {
+            border:3px solid #0069ff;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            
+            
+           
+        }
+        .carousel-indicators .active
+        {
+            background-color:#0069ff;
+        }
+        .slider_text
+        {
+            font-size: 16px !important;
+            height: 100px;
+            margin-top: 40px;
+        }
+        a
+        {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            color: black;
+            font-size: 40px;
+        }
+        .carousel-control-prev 
+        {
+            
+            left: -70px;
+
+        }
+        .carousel-control-next 
+        {
+           
+            right: -70px;
+        }
+
+    }
+        // modifie slider code reuseabl eend 
+
+
+    .main_container
+    {
+    width: 100%;
+    .container-fluid
+    {
+        background-color: #fff;
+
     header
     {
-        border:1px solid;
         height: 105px;
-        
+
+
+        .sub_header
+        {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+      
+      
         .row_one
         {
-            border:1px solid;
+            border-bottom:1px solid #eeeeee;
             height: 40px;
+            .col-lg-6 a
+            {
+               text-decoration: none;
+               font-size: 11px;
+               font-weight: 600;
+               color: grey;
+               &:hover
+               {
+                   color: blue;
+               }
+            }
+            .top_headerNave a
+            {
+                margin-right: 20px;
+                margin-left: 10px;
+                font-weight: 600;
+                &:hover
+                {
+                     color: grey;
+                    
+                }
+            }
         }
+        .nav_container
+        {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        nav
+        {
+            width: 100%;
+            padding-left: 0px;
+            
+            .navbar-nav
+            {
+                margin-left: 60px;
+            }
+            ul li a
+            {
+                color: #031b4e!important;
+                font-size: 14px;
+                font-weight: 600;
+
+                &:hover
+                {
+                    color: red;
+                }
+            }            
+        }
+
+        }}}
+    }
+    
+
+    .www_container
+    {
+        background-image: url(../images/bg-home-1-d54581d7.jpg);
+        width: 100%;
+        margin-top: 75px;
+        padding: 80px 70px ;
+        border: 1px solid;
+        .row
+        {
+            margin-top:75px;
+            .welcome_section
+            {
+                color: #fff;
+                padding-top: 70px;
+                h1
+            {
+                font-size:5vw;
+                font-weight: 600;
+                line-height: 1.18;
+            }
+            p
+            {
+                // font-size:1.9vw;
+                font-size: 24px;
+                opacity: 0.8;
+                letter-spacing: .5px;
+
+            }
+            }
+            .signUp_form
+            {
+              
+                .formDploy
+                {
+                    background-color: #fff;
+                    border-radius: 5px;
+                    margin: auto;
+                    padding: 0px 20px 0px 20px;
+                    .heading
+                    {
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 120px;
+                       ;
+                        h2
+                        {
+                            font-weight: 600;
+                            letter-spacing: -1.0px
+                        }
+                    }
+                }
+                .login_choice
+                {
+                    display: flex;
+                    height: 50px;
+                    align-items: center;
+                    justify-content: center;
+                    p
+                    {
+                        padding: 0px;
+                        margin: 0px;
+                        color: #757d90;
+                        position: relative;
+                        width: 80%;
+                        text-align: center;
+                       
+
+                        &::before, &::after
+                        {
+                            content:" ";
+                            border-top: 1px solid #bfbcc5;
+                            width: 100px;
+                            display: block;
+                            position: absolute;
+                            top:12px;
+
+                           
+
+                           
+                        }
+                       
+                        &::after
+                        {
+                            right: 0px;
+
+                        }
+                       
+                       
+                        
+                }
+             
+                }
+                .signup_buttons
+                {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .signUp_btn
+                    {
+                       width: 50%;
+                       display: block;
+                       width: 48%;
+                       height: 50px;
+                       background-color: #d5e4f7;
+                       font-weight: bold;
+                       border: 0px solid;
+                       outline: none;
+                       border-radius: 5px;
+                       position: relative;
+                       &:hover
+                       {
+                           background-color: #aac8ef;
+                       }
+                       .btn_img
+                       {
+                           position: absolute;
+                           left: 17px;
+                           width: 20px;
+                           height: 20px;
+
+                       }
+                   }
+                    }
+                    .termsOfService
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content:center;
+                        font-size: 12px;
+                        height: 75px;
+                        p
+                        {
+                            padding: 0px;
+                            margin: 0px;
+                            a
+                            {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+            }
+        }
+    }
+    #webLogos
+    {
+        background-color: #f3f5f9;
+        text-align: center;
+        padding-top: 70px;
+
+        .title_weblogo
+        {
+            font-size: 14px;
+            opacity: .4;
+            font-weight: 700;
+
+        }
+       .web_images
+       {
+           padding-top:20px ;
+           img
+           {
+               width: 110px;
+               height: 60px;
+           }
+       }
+       .customer_stories
+       {
+           
+           height: 100px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-weight: bold;
+
+           a
+           {
+               text-decoration: none;
+
+           }
+       }
+    }
+    #scale_seamlessly
+    {
         
+
+        .flex-column{
+            border-left: 2px solid #eee;
+          a
+          {
+            color: #8493b5;
+            &:hover
+            {
+                color: #031c4e;
+            }
+          }
+
+     
+        }
+        .nav-pills .nav-link.active
+        {
+            background-color:#fff;
+            border-left: 2px solid #0069ff;
+            border-radius: 0px;
+            color: #031c4e;
+            
+
+        }
+
+        
+    }
+    .slider_container
+    {
+        background-color: #f3f5f9;
+    
+
+
 
     
     }
+    #business_section
+    {
+       
+        .cataGory
+        {
+            height: 50px;
+            padding-top:20px ;
+            a
+            {
+                text-decoration: none;
+            }
+        }
+       
+    }
+    #ServiceCustomers
+    {
+        background: #031B50 url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
+        color: #fff;
+        .ServiceCustomers_heading
+        {
+            color: #fff;
+            width: 64%;
+            margin: auto;
+
+        }
+        .row{
+            margin-top: 40px;
+            table
+            {
+                color: #ffff;
+                font-size: 12px;
+                 th
+                {
+                    border-top: 0px solid;
+                    border-color: #444c54;
+
+                }
+                td
+                {
+                    border-color: #444c54;
+
+                }
+                
+                p
+                {
+                    margin: 0px;
+                    padding: 0px;
+                    font-size: 14px;
+                    opacity: 0.8;
+                }
+                a
+                {
+                    color: #00d7d2;
+                    text-decoration: none;
+                    &:hover
+                    {
+                       color: #0069ff; 
+                    }
+                }
+            }
+        }
+    }
+    #getStarted
+    {
+        background-image: url(../images/bgimage.jpg);
+        background-position: center bottom left;
+        .butBox
+        {
+            text-align: center;
+            button
+            {
+                padding: 15px;
+                border-radius: 5px;
+                color: #0069ff;
+                width: 230px;
+                font-weight: bold;
+                background-color: #fff;
+                outline: none;
+                border: 0px solid;
+                &:hover
+                {
+                   background-color: #eee;
+                }
+            }
+        }
+    }
+   #footer
+   {
+       background-color: #010e28;
+       color: #fff;
+       ul
+       {
+           padding: 0px;
+           li
+           {
+               list-style: none;
+               padding-bottom: 10px;
+               font-size: 15px;
+
+               
+
+               a
+               {
+                   color: #908787;
+                   text-decoration: none;
+                   &:hover
+                   {
+                       color: #fff;
+                   }
+               }
+           }
+       }
+       #main_footer
+       {
+           border-top: 1px solid #908787;
+           padding-top:30px;
+           margin-top: 40px;
+           .f_right
+           {
+              display: flex;
+              flex-direction: row;
+              
+                .f_text
+              {
+                  display: flex;
+                  align-items: center;
+                  justify-content:center;
+                  font-size: 15px;
+                  color:#908787 ;
+              }
+           }
+          .social_icons
+          {
+              a
+              {
+                  color: #757d90;
+                  margin: 8px;
+                  font-size: 25px;
+
+
+
+
+                  &:hover
+                  {
+                      color: #fff;
+                  }
+              }
+          }
+
+       }
+   }
 }
+ 
+    
+
+                        
