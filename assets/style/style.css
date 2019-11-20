@@ -11,6 +11,18 @@ body {
   text-align: center;
 }
 
+.hvCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .paddingTB {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -55,28 +67,33 @@ body {
   color: rgba(3, 27, 78, 0.7);
 }
 
-#carouselExampleIndicators, #carouselExampleIndicators1 {
+#carouselExampleIndicators,
+#carouselExampleIndicators1 {
   position: relative;
 }
 
-#carouselExampleIndicators .carousel-indicators li, #carouselExampleIndicators1 .carousel-indicators li {
+#carouselExampleIndicators .carousel-indicators li,
+#carouselExampleIndicators1 .carousel-indicators li {
   border: 3px solid #0069ff;
   height: 10px;
   width: 10px;
   border-radius: 50%;
 }
 
-#carouselExampleIndicators .carousel-indicators .active, #carouselExampleIndicators1 .carousel-indicators .active {
+#carouselExampleIndicators .carousel-indicators .active,
+#carouselExampleIndicators1 .carousel-indicators .active {
   background-color: #0069ff;
 }
 
-#carouselExampleIndicators .slider_text, #carouselExampleIndicators1 .slider_text {
+#carouselExampleIndicators .slider_text,
+#carouselExampleIndicators1 .slider_text {
   font-size: 16px !important;
   height: 100px;
   margin-top: 40px;
 }
 
-#carouselExampleIndicators a, #carouselExampleIndicators1 a {
+#carouselExampleIndicators a,
+#carouselExampleIndicators1 a {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -87,27 +104,21 @@ body {
   font-size: 40px;
 }
 
-#carouselExampleIndicators .carousel-control-prev, #carouselExampleIndicators1 .carousel-control-prev {
+#carouselExampleIndicators .carousel-control-prev,
+#carouselExampleIndicators1 .carousel-control-prev {
   left: -70px;
 }
 
-#carouselExampleIndicators .carousel-control-next, #carouselExampleIndicators1 .carousel-control-next {
+#carouselExampleIndicators .carousel-control-next,
+#carouselExampleIndicators1 .carousel-control-next {
   right: -70px;
 }
 
-.main_container {
-  width: 100%;
+header {
+  background-color: #ffffff;
 }
 
-.main_container .container-fluid {
-  background-color: #fff;
-}
-
-.main_container .container-fluid header {
-  height: 105px;
-}
-
-.main_container .container-fluid header .sub_header {
+header .sub_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,33 +129,33 @@ body {
   height: 100%;
 }
 
-.main_container .container-fluid header .sub_header .row_one {
+header .sub_header .row_one {
   border-bottom: 1px solid #eeeeee;
   height: 40px;
 }
 
-.main_container .container-fluid header .sub_header .row_one .col-lg-6 a {
+header .sub_header .row_one .col-lg-6 a {
   text-decoration: none;
   font-size: 11px;
   font-weight: 600;
   color: grey;
 }
 
-.main_container .container-fluid header .sub_header .row_one .col-lg-6 a:hover {
+header .sub_header .row_one .col-lg-6 a:hover {
   color: blue;
 }
 
-.main_container .container-fluid header .sub_header .row_one .top_headerNave a {
+header .sub_header .row_one .top_headerNave a {
   margin-right: 20px;
   margin-left: 10px;
   font-weight: 600;
 }
 
-.main_container .container-fluid header .sub_header .row_one .top_headerNave a:hover {
+header .sub_header .row_one .top_headerNave a:hover {
   color: grey;
 }
 
-.main_container .container-fluid header .sub_header .nav_container {
+header .sub_header .nav_container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -156,23 +167,27 @@ body {
           align-items: center;
 }
 
-.main_container .container-fluid header .sub_header .nav_container nav {
+header .sub_header .nav_container nav {
   width: 100%;
   padding-left: 0px;
 }
 
-.main_container .container-fluid header .sub_header .nav_container nav .navbar-nav {
-  margin-left: 60px;
-}
-
-.main_container .container-fluid header .sub_header .nav_container nav ul li a {
+header .sub_header .nav_container nav ul li a {
   color: #031b4e !important;
   font-size: 14px;
   font-weight: 600;
 }
 
-.main_container .container-fluid header .sub_header .nav_container nav ul li a:hover {
+header .sub_header .nav_container nav ul li a:hover {
   color: red;
+}
+
+.main_container {
+  width: 100%;
+}
+
+.main_container .container-fluid {
+  background-color: #fff;
 }
 
 .main_container .www_container {
@@ -213,15 +228,6 @@ body {
 
 .main_container .www_container .row .signUp_form .formDploy .heading {
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 120px;
 }
 
@@ -231,16 +237,7 @@ body {
 }
 
 .main_container .www_container .row .signUp_form .login_choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .main_container .www_container .row .signUp_form .login_choice p {
@@ -299,15 +296,6 @@ body {
 }
 
 .main_container .www_container .row .signUp_form .termsOfService {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 12px;
   height: 75px;
 }
@@ -344,15 +332,6 @@ body {
 
 .main_container #webLogos .customer_stories {
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: bold;
 }
 
@@ -502,15 +481,6 @@ body {
 }
 
 .main_container #footer #main_footer .f_right .f_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 15px;
   color: #908787;
 }
@@ -523,5 +493,17 @@ body {
 
 .main_container #footer #main_footer .social_icons a:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 987px) {
+  .row_one {
+    display: none;
+  }
+  .www_container .row .welcome_section {
+    padding-top: 0px !important;
+  }
+  .www_container .row .welcome_section h1 {
+    font-size: 45px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
