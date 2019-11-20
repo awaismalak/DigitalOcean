@@ -506,4 +506,12 @@ header .sub_header .nav_container nav ul li a:hover {
     font-size: 45px !important;
   }
 }
+
+@media screen and (max-width: 700px) {
+  #carouselExampleIndicators .carousel-control-prev, #carouselExampleIndicators .carousel-control-next,
+  #carouselExampleIndicators1 .carousel-control-prev,
+  #carouselExampleIndicators1 .carousel-control-next {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

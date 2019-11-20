@@ -556,3 +556,20 @@ header {
         }
     }
 }
+@media screen and (max-width: 700px) {
+
+
+// modifie slider code reuseable 
+#carouselExampleIndicators,
+#carouselExampleIndicators1 {
+ 
+    .carousel-control-prev, .carousel-control-next {
+
+       display: none;
+
+    }
+
+}
+
+
+}
